@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350315AC1D0117FC00DFE117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350315AB1D0117FC00DFE117 /* AppDelegate.swift */; };
+		350315B11D0117FC00DFE117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350315AF1D0117FC00DFE117 /* Main.storyboard */; };
+		350315B41D0117FC00DFE117 /* BadEmail.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 350315B21D0117FC00DFE117 /* BadEmail.xcdatamodeld */; };
+		350315B61D0117FC00DFE117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350315B51D0117FC00DFE117 /* Assets.xcassets */; };
+		350315B91D0117FC00DFE117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350315B71D0117FC00DFE117 /* LaunchScreen.storyboard */; };
+		350315C11D0118C200DFE117 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350315C01D0118C200DFE117 /* MyTableViewController.swift */; };
+		350315C31D011C8100DFE117 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350315C21D011C8100DFE117 /* Email.swift */; };
+		350315C51D011F0C00DFE117 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350315C41D011F0C00DFE117 /* EmailCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		350315A81D0117FC00DFE117 /* BadEmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadEmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		350315AB1D0117FC00DFE117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		350315B01D0117FC00DFE117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		350315B31D0117FC00DFE117 /* BadEmail.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BadEmail.xcdatamodel; sourceTree = "<group>"; };
+		350315B51D0117FC00DFE117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		350315B81D0117FC00DFE117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		350315BA1D0117FC00DFE117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		350315C01D0118C200DFE117 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		350315C21D011C8100DFE117 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		350315C41D011F0C00DFE117 /* EmailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350315A51D0117FC00DFE117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3503159F1D0117FC00DFE117 = {
+			isa = PBXGroup;
+			children = (
+				350315AA1D0117FC00DFE117 /* BadEmail */,
+				350315A91D0117FC00DFE117 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		350315A91D0117FC00DFE117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350315A81D0117FC00DFE117 /* BadEmail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350315AA1D0117FC00DFE117 /* BadEmail */ = {
+			isa = PBXGroup;
+			children = (
+				350315AB1D0117FC00DFE117 /* AppDelegate.swift */,
+				350315C01D0118C200DFE117 /* MyTableViewController.swift */,
+				350315AF1D0117FC00DFE117 /* Main.storyboard */,
+				350315B51D0117FC00DFE117 /* Assets.xcassets */,
+				350315B71D0117FC00DFE117 /* LaunchScreen.storyboard */,
+				350315BA1D0117FC00DFE117 /* Info.plist */,
+				350315B21D0117FC00DFE117 /* BadEmail.xcdatamodeld */,
+				350315C21D011C8100DFE117 /* Email.swift */,
+				350315C41D011F0C00DFE117 /* EmailCell.swift */,
+			);
+			path = BadEmail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		350315A71D0117FC00DFE117 /* BadEmail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350315BD1D0117FC00DFE117 /* Build configuration list for PBXNativeTarget "BadEmail" */;
+			buildPhases = (
+				350315A41D0117FC00DFE117 /* Sources */,
+				350315A51D0117FC00DFE117 /* Frameworks */,
+				350315A61D0117FC00DFE117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BadEmail;
+			productName = BadEmail;
+			productReference = 350315A81D0117FC00DFE117 /* BadEmail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350315A01D0117FC00DFE117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JeremyPetter;
+				TargetAttributes = {
+					350315A71D0117FC00DFE117 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 350315A31D0117FC00DFE117 /* Build configuration list for PBXProject "BadEmail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3503159F1D0117FC00DFE117;
+			productRefGroup = 350315A91D0117FC00DFE117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				350315A71D0117FC00DFE117 /* BadEmail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350315A61D0117FC00DFE117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350315B91D0117FC00DFE117 /* LaunchScreen.storyboard in Resources */,
+				350315B61D0117FC00DFE117 /* Assets.xcassets in Resources */,
+				350315B11D0117FC00DFE117 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350315A41D0117FC00DFE117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350315B41D0117FC00DFE117 /* BadEmail.xcdatamodeld in Sources */,
+				350315C11D0118C200DFE117 /* MyTableViewController.swift in Sources */,
+				350315C31D011C8100DFE117 /* Email.swift in Sources */,
+				350315C51D011F0C00DFE117 /* EmailCell.swift in Sources */,
+				350315AC1D0117FC00DFE117 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		350315AF1D0117FC00DFE117 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				350315B01D0117FC00DFE117 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		350315B71D0117FC00DFE117 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				350315B81D0117FC00DFE117 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		350315BB1D0117FC00DFE117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		350315BC1D0117FC00DFE117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		350315BE1D0117FC00DFE117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BadEmail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeremyPetter.BadEmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		350315BF1D0117FC00DFE117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BadEmail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeremyPetter.BadEmail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350315A31D0117FC00DFE117 /* Build configuration list for PBXProject "BadEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350315BB1D0117FC00DFE117 /* Debug */,
+				350315BC1D0117FC00DFE117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350315BD1D0117FC00DFE117 /* Build configuration list for PBXNativeTarget "BadEmail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350315BE1D0117FC00DFE117 /* Debug */,
+				350315BF1D0117FC00DFE117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		350315B21D0117FC00DFE117 /* BadEmail.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				350315B31D0117FC00DFE117 /* BadEmail.xcdatamodel */,
+			);
+			currentVersion = 350315B31D0117FC00DFE117 /* BadEmail.xcdatamodel */;
+			path = BadEmail.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 350315A01D0117FC00DFE117 /* Project object */;
+}

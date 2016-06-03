@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="al0-ue-rHl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Table View Controller-->
+        <scene sceneID="Pum-gQ-43c">
+            <objects>
+                <tableViewController id="Txl-nr-QSI" customClass="MyTableViewController" customModule="BadEmail" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="QwY-A7-dbC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmailReuseIdentifier" rowHeight="72" id="mVZ-0Q-YR4" customClass="EmailCell" customModule="BadEmail" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mVZ-0Q-YR4" id="Fqc-RU-Bs2">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="71.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arya" translatesAutoresizingMaskIntoConstraints="NO" id="KZJ-gw-tDn">
+                                            <rect key="frame" x="8" y="0.0" width="72" height="72"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="72" id="XlT-Je-wPK"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sender name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9P-nO-tyH">
+                                            <rect key="frame" x="88" y="8" width="108" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text preview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7V-sS-gAo">
+                                            <rect key="frame" x="88" y="37" width="496" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.79362320026178013" green="0.79362320026178013" blue="0.79362320026178013" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="topMargin" secondItem="T9P-nO-tyH" secondAttribute="top" id="MMw-sR-Zot"/>
+                                        <constraint firstItem="KZJ-gw-tDn" firstAttribute="top" secondItem="Fqc-RU-Bs2" secondAttribute="top" id="TQD-Vk-prI"/>
+                                        <constraint firstItem="KZJ-gw-tDn" firstAttribute="leading" secondItem="Fqc-RU-Bs2" secondAttribute="leading" constant="8" id="ZT5-YH-X8r"/>
+                                        <constraint firstAttribute="bottom" secondItem="KZJ-gw-tDn" secondAttribute="bottom" id="dYJ-uR-cN7"/>
+                                        <constraint firstItem="T9P-nO-tyH" firstAttribute="leading" secondItem="KZJ-gw-tDn" secondAttribute="trailing" constant="8" id="gUv-AS-CUc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="C7V-sS-gAo" secondAttribute="trailing" constant="8" id="hFm-it-cbY"/>
+                                        <constraint firstItem="C7V-sS-gAo" firstAttribute="top" secondItem="T9P-nO-tyH" secondAttribute="bottom" constant="8" id="q4m-EA-7Ug"/>
+                                        <constraint firstItem="C7V-sS-gAo" firstAttribute="leading" secondItem="KZJ-gw-tDn" secondAttribute="trailing" constant="8" id="rmS-wf-c14"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bodyLabel" destination="C7V-sS-gAo" id="RY7-tP-i5D"/>
+                                    <outlet property="senderImageView" destination="KZJ-gw-tDn" id="aSC-mL-kcu"/>
+                                    <outlet property="senderNameTextField" destination="T9P-nO-tyH" id="LYd-iE-YtU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Txl-nr-QSI" id="TC8-w5-ezp"/>
+                            <outlet property="delegate" destination="Txl-nr-QSI" id="1XG-uX-b7d"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QQs-Ye-cEj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MUs-xj-SqD">
+                            <connections>
+                                <action selector="addEmail:" destination="Txl-nr-QSI" id="kvX-3p-ONo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPc-OR-gSY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="448"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EGQ-MR-Jiv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="al0-ue-rHl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mlR-HO-3Yz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Txl-nr-QSI" kind="relationship" relationship="rootViewController" id="mCV-o6-elp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crW-ZV-h1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="448"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arya" width="225" height="225"/>
+    </resources>
+</document>
